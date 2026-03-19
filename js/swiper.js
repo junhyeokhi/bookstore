@@ -16,3 +16,14 @@ var newswiper = new Swiper(".newSwiper", {
     },
     slidesPerGroup: 3
 });
+
+// // #best swiper
+// var bestswiper = new Swiper(".bestSwiper", {
+//       slidesPerView: 5,
+//       spaceBetween: 10,
+//       pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
+//     slidesPerGroup: 3
+// });
