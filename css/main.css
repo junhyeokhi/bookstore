@@ -113,16 +113,28 @@ main {
 aside {
     width: 210px;
     height: 100%;
-    background-color: greenyellow;
 }
 
-aside img {
-    width: 182px;
-    height: 80px;
+aside ul {
+    border: 1px solid #ddd;
     margin-top: 40px;
-    margin-right: 30px;
-    
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
 }
+
+aside ul li:nth-of-type(1) {
+    height: 90px;
+    background-image: linear-gradient(108.14deg, #1060ED -7.91%, #5A90F0 98.51%);
+    color: white;
+    font-size: large;
+    padding-top: 30px;
+}
+
+aside ul li {
+    padding: 15px;
+}
+
 #main_content {
     width: calc(100% - 300px);
     height: 100%;
@@ -194,19 +206,52 @@ aside img {
     border: 1px solid #ddd;
     border-radius: 50%;
 }
+
 /* search */
 #search {
     width: 100%;
-    height: 200px;
-    background-color: aquamarine
+    height: 95px;
+    background-color: #eee;
+    margin-top: 55px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#search span {
+    margin-right: 10px;
+    font-size: large;
+}
+
+#search .search-container {
+    width: 270px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search .search-container input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
 /* best */
 #best {
     width: 100%;
     height: 915px;
+    position: relative;
 }
 
-#best .boxWrap {
+#best h3 {
+    margin-top: 30px;
+}
+
+#best .bestbox {
     width: 100%;
     height: 420px;
     margin: 0 auto;
@@ -215,6 +260,7 @@ aside img {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
+    margin-top: 40px;
 }
 
 #best .box {
@@ -227,11 +273,31 @@ aside img {
     text-align: left;
 }
 
+#booktab {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+#booktab li {
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-size: small;
+}
+
 /* banner */
 #banner {
     width: 100%;
     height: 165px;
-    background-color: navajowhite;
+}
+
+#banner img {
+    width: 100%;
+    height: 165px;
 }
 
 /* new */

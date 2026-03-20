@@ -62,8 +62,9 @@
     </header>
     <main>
         <aside>
-            <img src="./img/logo.jpg" alt="단기북스">
+            
             <ul>
+                <li>단기북스</li>
                 <li><a href="#">홈</a></li>
                 <li><a href="#">전체 교재</a></li>
                 <li><a href="#">베스트셀러</a></li>
@@ -91,10 +92,32 @@
                     <div class="swiper-button-prev"></div>
                 </div>  
             </div>
-            <div id="search"></div>
+            <div id="search">
+                <span>교재 검색</span>
+                <div class="search-container">
+                    <input name="search" placeholder="    저자명/도서명 검색" name="검색"/>
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
             <div id="best">
                 <h3>공단기 베스트 셀러</h3>
-                <div class="boxWrap">
+                <ul id="booktab">
+                    <li>주간</li>
+                    <li>월간</li>
+                </ul>
+                <div id="boxWrap" class="bestbox">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <div id="boxWrap2" class="bestbox">
                     <div class="box"></div>
                     <div class="box"></div>
                     <div class="box"></div>
@@ -108,7 +131,7 @@
                 </div>
             </div>
             <div id="banner">
-
+                <img src="./img/banner.jpg" alt="배너">
             </div>
             <div id="new">
                 <h3>새로 나온 교재</h3>
