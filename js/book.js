@@ -1,7 +1,7 @@
 async function bookData() {
             const params = new URLSearchParams({
                 target: "title",
-                query: "귀멸의 칼날",
+                query: "총론",
                 size: 10
             });
 
@@ -49,7 +49,7 @@ async function bookData() {
 async function bookData2() {
             const params = new URLSearchParams({
                 target: "title",
-                query: "나루토",
+                query: "모의고사",
                 size: 10
             });
 
@@ -119,8 +119,8 @@ async function fetchBooks(query) {
         async function bookData3() {
             try {
                 const queries = [
-                    { query: "원피스", sectionId: "boxWrap" },
-                    { query: "진격의 거인", sectionId: "boxWrap2" },
+                    { query: "한국사", sectionId: "boxWrap" },
+                    { query: "보카", sectionId: "boxWrap2" },
                 ];
 
                 for (const { query, sectionId } of queries) {
