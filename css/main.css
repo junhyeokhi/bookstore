@@ -167,6 +167,11 @@ aside ul li {
     position: relative;
 }
 
+#slider .swiper-pagination {
+    text-align: right;
+    padding-right: 20%;
+}
+
 #slider p {
     display: flex;
     justify-content: center;
@@ -201,10 +206,48 @@ aside ul li {
     object-fit: cover;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+#slider .swiper-button-next {
     border: 1px solid #ddd;
     border-radius: 50%;
+    left: 100px;
+    right: auto;
+    top: auto;
+    bottom: 100px;
+    color: #888;
+}
+
+#slider .swiper-button-prev {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    left: 30px;
+    top: auto;
+    bottom: 100px;
+    color: #888;
+}
+
+#slider_txt .swiper-navigation-icon {
+    width: 50%;
+    height: 50%;
+}
+
+/* 불렛(이미지) 기본 스타일 */
+#slider .swiper-pagination-bullet {
+    width: 50px;
+    /* 이미지 크기에 맞게 조절 */
+    height: 70px;
+    border-radius: 0;
+    /* 동그라미 해제 */
+    background: none;
+    /* 기본 배경색 제거 */
+    opacity: 0.5;
+    /* 비활성 상태 투명도 */
+}
+
+/* 활성화된 슬라이드의 불렛(이미지) 스타일 */
+#slider .swiper-pagination-bullet-active {
+    opacity: 1;
+    border: 2px solid blue;
+    /* 강조 효과 */
 }
 
 /* search */
