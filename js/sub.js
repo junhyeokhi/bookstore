@@ -47,6 +47,7 @@ async function bookData() {
         // 설명만 따로
         contextBox.innerHTML = `
             <p class="desc">${contents}</p>
+            <span>자세히 보기</span>
         `
         
     } catch (error) {
