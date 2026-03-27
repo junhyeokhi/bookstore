@@ -60,64 +60,51 @@
         </nav>
     </header>
 
-    <section>
-        <h3>관련 도서</h3>
+    <section class="detail">
 
-        <div class="sub_box"></div>
+        <!-- 왼쪽: 이미지 -->
+        <div class="left">
+            <div class="sub_box"></div>
+        </div>
 
-        <table>
-            <tr>
-                <td>판매가</td>
-                <td class="pricenum"></td>
-            </tr>
+        <!-- 오른쪽: 정보 -->
+        <div class="right">
 
-            <tr>
-                <td>적립금혜택</td>
-                <td>38p</td>
-            </tr>
+            <div class="info_top">
+                <h2 class="book_title"></h2>
+                <p class="author"></p>
+                <p class="price"></p>
+            </div>
 
-            <tr>
-                <td>브랜드</td>
-                <td>피오피스토리</td>
-            </tr>
+            <table class="info_table">
+                <tr>
+                    <td>배송비</td>
+                    <td>3,000원</td>
+                </tr>
+                <tr>
+                    <td>출판사</td>
+                    <td>에스티유니타스</td> 
+                </tr>
+                <tr>
+                    <td>수량</td>
+                    <td>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
 
-            <tr>
-                <td>배송구분</td>
-                <td>업체배송</td>
-            </tr>
+            <div class="btn_box">
+                <button class="cart">장바구니</button>
+                <button class="buy">바로 구매하기</button>
+            </div>
 
-            <tr>
-                <td>배송비</td>
-                <td>조건부무료배송</td>
-            </tr>
+            <div class="contextbox"></div>
 
-            <tr>
-                <td>수량</td>
-                <td>
-                    <select name="select" id="select">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <td colspan="2">
-                    <button>바로 구매</button>
-                    <button>장바구니 담기</button>
-                    <button>찜하기</button>
-                    <button>조르기</button>
-                </td>
-            </tr>
-
-        </table>
-
-        <div class="contextbox"></div>
-
-        <div id="tmpBox"></div>
+        </div>
 
     </section>
 

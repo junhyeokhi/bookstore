@@ -24,23 +24,31 @@ async function bookData() {
         // 요소 선택
         const subBox = document.querySelector(".sub_box");
         const contextBox = document.querySelector(".contextbox");
-        const priceNum = document.querySelector(".pricenum");
+        const priceNum = document.querySelector(".price");
+        const authorEl = document.querySelector(".author");
+        const titleEl = document.querySelector(".book_title");
 
-        // 데이터에서 필요한 값 추출
+        // 데이터
         const book = data.documents[0];
         const { title, thumbnail, authors, price, contents } = book;
 
-        // 요소 생성 및 추가
-        // 요소 생성 및 추가
-        subBox.innerHTML = `<h3>${title}</h3>
-        <img src="${thumbnail}">
+        // 이미지
+        subBox.innerHTML = `
+            <div class="img_wrap">
+                <img src="${thumbnail}" alt="${title}">
+            </div>
         `
-        priceNum.textContent += price + "원";
 
-        contextBox.innerHTML = `<h6>${authors[0]}</h6>
-        <p>${contents}</p>
-        <span>자세히보기</span>
+        // 텍스트
+        titleEl.textContent = title;
+        authorEl.textContent = authors[0];
+        priceNum.textContent = price.toLocaleString() + "원";
+
+        // 설명만 따로
+        contextBox.innerHTML = `
+            <p class="desc">${contents}</p>
         `
+        
     } catch (error) {
         console.log('에러발생', error);
     }
@@ -51,13 +59,12 @@ bookData();
 document.addEventListener("DOMContentLoaded", async function () {
     try {
         const response = await fetch("./sub_txt/txt1.txt");
-        if (!response.ok) {
-            throw new Error("Network response was not ok");
-        }
         const data = await response.text();
-        document.getElementById("tmpBox").innerHTML = data;
+
+        document.querySelector(".contextbox").innerHTML = data;
+
     } catch (error) {
-        console.error("There was a problem with the fetch operation:", error);
+        console.error(error);
     }
 });
 
