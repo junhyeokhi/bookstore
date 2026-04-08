@@ -376,6 +376,7 @@ aside ul li {
 #new {
     width: 100%;
     height: 520px;
+    margin-top: 30px;
 }
 
 #new .swiper-slide {
